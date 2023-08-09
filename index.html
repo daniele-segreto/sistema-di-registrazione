@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina</title>
+    <!--BOOTSTRAP CSS  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./servizi.html">Servizi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contatti.html">Contatti</a>
+                    </li>
+                    
+                    <!-- MENU' A TENDINA (SETTATO A D-NONE) -->
+                    <li class="nav-item dropdown d-none" id="userDropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span id="userName"></span>
+                        </a>
+                        <ul class="dropdown-menu ps-3 pb-3" onclick="logout()">
+                            <li><a class="dropdown-item" href="#"></a>Logout</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- REGISTRATI E LOGIN (SETTATO A D-NONE)  -->
+                    <li class="nav-item d-none" id="registratiNav">
+                        <a class="nav-link" href="./registrati.html">Registrati</a>
+                    </li>
+                    <li class="nav-item d-none" id="loginNav">
+                        <a class="nav-link" href="./login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- MAIN -->
+    <section class="bg-dark text-light p-5">
+        <h1 class="text-center">HOME</h1>
+        
+        <div class="m-5">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla a rem adipisci illo, quibusdam enim omnis quidem laudantium ad autem nostrum veritatis corrupti fuga deleniti nam. Esse, voluptas aliquam pariatur fugit debitis voluptates adipisci earum veniam consequatur. Fugiat nostrum voluptates maiores officia accusamus, repudiandae, officiis totam est esse assumenda quasi? Voluptates assumenda reprehenderit a et consequuntur placeat ducimus facilis excepturi cupiditate esse dolorem eos veniam animi, maiores, culpa accusantium voluptas autem! Quam soluta beatae at dolores voluptas, dolore corrupti? Necessitatibus at enim cumque voluptas! Laudantium eaque autem, eum voluptatum vel impedit quas laboriosam ipsam deserunt explicabo beatae magni porro ab?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae tempora delectus eum atque aut quae, quidem qui, impedit accusamus distinctio numquam velit, magni ipsum? Sint illum molestiae quisquam repudiandae. Illo repellat dolorum doloremque eos ratione! Inventore tempora molestias nisi, nihil non repudiandae atque necessitatibus quam odio aut fugiat adipisci iste temporibus veritatis asperiores similique culpa accusamus labore? Alias tempore molestias earum. Enim expedita cupiditate obcaecati nostrum minima dolor. Velit sit recusandae, porro vitae odio et corporis laboriosam. Optio distinctio, aliquam hic, dignissimos debitis tenetur cum repellat ullam ipsum, consequuntur ratione tempore laboriosam esse quod recusandae veritatis! Aut, veniam nemo. Necessitatibus.</p>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer class="bg-light text-dark text-center p-5">
+        Questo è il Footer
+    </footer>
+    
+    <!-- BOOTSRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JAVASCRIPT -->
+    <script src="./js/registrazione_login.js"></script>
+    <script src="./js/accesso_logout.js"></script>
+</body>
+</html>
